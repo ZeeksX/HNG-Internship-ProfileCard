@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="profile-card">
+        <img src="./assets/profile.jpg" alt="Profile Picture" data-testid="profilePicture" id="profilePicture">
+        <h2 data-testid="fullName" id="fullName" style="margin-bottom: 0.5rem;">Ikinwot Ezekiel</h2>
+        <h4 data-testid="jobTitle" id="jobTitle" style="margin-top: 0.5rem;">Frontend Developer</h4>
+        <p data-testid="shortBio" id="shortBio" style="font-size: 1rem; font-weight: 500; color: darkblue;">
+            As a computer science undergraduate, I have a solid foundation in HTML, CSS, and JavaScript. I am also
+            proficient in frameworks such as React.js and Vue.js, having developed numerous applications using these
+            technologies. My experience equips me with the skills to create dynamic and responsive web applications
+            effectively.
+        </p>
+
+        <h3>Contact me: </h3>
+        <div class="social-links" data-testid="socialLinks">
+            <div class="social-link">
+                <a id="email" data-testid="emailAddress" href="mailto:ikinwotezekiel@gmail.com">
+                    <img src="./assets/icons8-mail-48.png" alt="gmail-icon" />Gmail</a>
+            </div>
+            <div class="social-link">
+                <a href="https://www.linkedin.com/in/ikinwotezekiel" target="_blank">
+                    <img src="./assets/icons8-linkedin.svg" alt="LinkedIn-logo" />LinkedIn</a>
+            </div>
+            <div class="social-link">
+                <a href="https://www.github.com/ZeeksX" target="_blank">
+                    <img src="./assets/github.svg" alt="GitHub-logo">GitHub</a>
+            </div>
+        </div>
+
+        <p data-testid="currentTimeUTC" id="utc-time"></p>
+        <p data-testid="currentLocation" id="currentLocation">Ogun State, Nigeria</p>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
